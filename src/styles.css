@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+  transition: 0.2s;
+}
+
+body.dark-mode {
+  background-color: rgb(45, 45, 45);
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+h5 {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+h6 {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+code {
+  font-size: 1.2em;
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: right;
+}
+
+.button-text {
+  margin-right: 15px;
+  margin-top: 6px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.button {
+  width: 80px;
+  height: 40px;
+  border-radius: 200px;
+  cursor: pointer;
+  position: relative;
+  background-color: rgb(160, 160, 160);
+  transition: 0.2s;
+}
+
+.button::before {
+  position: absolute;
+  content: '';
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 200px;
+  margin: 5px;
+  transition: 0.2s;
+}
+
+input {
+  display: none;
+}
+
+input:checked + .button {
+  background-color: rgb(25, 25, 25);
+}
+
+input:checked + .button::before {
+  transform: translateX(40px);
+}
+
+.square {
+  border: 2px solid #000000;
+  float: left;
+  font-size: 60px;
+  font-weight: bold;
+  color: black;
+  line-height: 34px;
+  height: 100px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 100px;
+}
+
+.square.dark-mode {
+  background-color: rgb(25, 25, 25);
+  border: 2px solid gray;
+  color: white;
+}
+
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
